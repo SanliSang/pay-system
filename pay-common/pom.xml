@@ -10,22 +10,27 @@
     </parent>
 
     <groupId>com.sanli</groupId>
-    <artifactId>pay-mq</artifactId>
+    <artifactId>pay-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pay-mq</name>
+    <name>pay-common</name>
     <packaging>jar</packaging>
-    <description>Pay-MQ project for Spring Boot</description>
+    <description>Pay-Common project for Spring Boot</description>
 
     <dependencies>
-
+        <!-- swagger2 -->
         <dependency>
-            <groupId>com.sanli</groupId>
-            <artifactId>pay-common</artifactId>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <!-- swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 

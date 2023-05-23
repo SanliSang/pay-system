@@ -10,22 +10,32 @@
     </parent>
 
     <groupId>com.sanli</groupId>
-    <artifactId>pay-mq</artifactId>
+    <artifactId>pay-mbg</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pay-mq</name>
+    <name>pay-mbg</name>
     <packaging>jar</packaging>
-    <description>Pay-MQ project for Spring Boot</description>
+    <description>Pay-Mbg project for Spring Boot</description>
 
     <dependencies>
-
         <dependency>
             <groupId>com.sanli</groupId>
             <artifactId>pay-common</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
         </dependency>
     </dependencies>
 
