@@ -1,10 +1,10 @@
-package com.sanli.payservice;
+package com.sanli.pay;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PayServiceApplicationTests {
+class PayMbgApplicationTests {
 
     @Test
     void contextLoads() {

@@ -18,6 +18,31 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.sanli</groupId>
+            <artifactId>pay-mbg</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sanli</groupId>
+            <artifactId>pay-mq</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.springboot</groupId>
+            <artifactId>best-pay-sdk</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

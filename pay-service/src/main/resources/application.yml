@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  # 指定mapper.xml映射文件路径
+  mapper-locations: classpath:com/**/mapper/*.xml
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 指定model实体类路径（其中@MapperScan可以扫描mapper的接口路径）
+  type-aliases-package: com.sanli.pay.model

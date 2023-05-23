@@ -1,13 +1,13 @@
-package com.sanli.paysystem;
+package com.sanli.pay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PaySystemApplication {
+public class PayServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaySystemApplication.class, args);
+        SpringApplication.run(PayServiceApplication.class, args);
     }
 
 }
