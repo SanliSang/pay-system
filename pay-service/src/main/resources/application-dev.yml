@@ -6,6 +6,25 @@ spring:
     url: jdbc:mysql://localhost:3306/pay-mall-system?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: root
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: # 默认密码为空
+    jedis:
+      pool:
+        min-idle: 0 # 最小空闲连接数
+        max-idle: 8 # 最大空闲连接数
+        max-wait: -1ms # 最大阻塞等待时间（超出连接池时，线程将进入阻塞队列中等待其他连接释放）
+        max-active: 8 # 最大连接数
+    timeout: 3000ms # 连接超时时间（毫秒）
 
 
-
+wx:
+  pay:
+    config:
+      appId: wx3e6b9f1c5a7ff034 # appId
+      mchId: 1614433647 # 商户Id
+      apiKey: Aa111111111122222222223333333333 # 商户密钥
+      notifyUrl: # 支付后通知的回调接口
+      returnUrl: # 支付后返回接口

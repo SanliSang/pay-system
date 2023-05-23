@@ -22,12 +22,14 @@
         <module>pay-service</module>
         <module>pay-mbg</module>
         <module>pay-common</module>
+        <module>pay-cache</module>
     </modules>
 
     <properties>
         <pay-common.version>0.0.1-SNAPSHOT</pay-common.version>
         <pay-mbg.version>0.0.1-SNAPSHOT</pay-mbg.version>
         <pay-mq.version>0.0.1-SNAPSHOT</pay-mq.version>
+        <pay-cache.version>0.0.1-SNAPSHOT</pay-cache.version>
         <java.version>8</java.version>
         <spring-boot-starter-web.version>2.1.7.RELEASE</spring-boot-starter-web.version>
         <mybatis-spring-boot-starter.version>2.1.0</mybatis-spring-boot-starter.version>
@@ -35,6 +37,7 @@
         <best-pay-sdk.version>1.3.0</best-pay-sdk.version>
         <spring-boot-starter-freemarker.version>2.1.7.RELEASE</spring-boot-starter-freemarker.version>
         <spring-boot-starter-amqp.version>2.1.7.RELEASE</spring-boot-starter-amqp.version>
+        <spring-boot-starter-data-redis.version>2.1.7.RELEASE</spring-boot-starter-data-redis.version>
         <springfox-swagger2.version>2.7.0</springfox-swagger2.version>
         <springfox-swagger-ui.version>2.7.0</springfox-swagger-ui.version>
         <mybatis-generator-core.version>1.4.1</mybatis-generator-core.version>
@@ -80,6 +83,12 @@
                 <version>${pay-mq.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.sanli</groupId>
+                <artifactId>pay-cache</artifactId>
+                <version>${pay-cache.version}</version>
+            </dependency>
+
             <!-- web -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -117,6 +126,13 @@
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>${spring-boot-starter-amqp.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring-boot-starter-data-redis.version}</version>
+            </dependency>
+
             <!-- swagger2 -->
             <dependency>
                 <groupId>io.springfox</groupId>

@@ -1,10 +1,13 @@
 package com.sanli.pay.model;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Builder;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Builder
 public class MallPayLog implements Serializable {
     private Integer id;
 
